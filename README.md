@@ -13,6 +13,13 @@ TFM and VF (not real fonts):
 Type1 Fonts:
 - ascgrp, ascii10, ascii36
 
+## Repository
+
+The bundle is maintained on GitHub:
+https://github.com/texjporg/ptex-fonts
+
+If you have issues, please let us know from the above page.
+
 ## License
 
 The bundle is redistribution derived from [ptex-texmf distribution
@@ -21,3 +28,4 @@ Since the original license is the 3-clause BSD license,
 this redistribution also follows it (see LICENSE).
 
 Japanese TeX Development Community
+2016-04-17
