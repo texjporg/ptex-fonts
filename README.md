@@ -27,5 +27,8 @@ by ASCII MEDIA WORKS](http://ascii.asciimw.jp/pb/ptex/).
 Since the original license is the 3-clause BSD license,
 this redistribution also follows it (see LICENSE).
 
-Japanese TeX Development Community
+## Latest Release
+
 2016-04-17
+
+Japanese TeX Development Community
