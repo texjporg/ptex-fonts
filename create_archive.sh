@@ -16,9 +16,9 @@ rm $TMP/$PROJECT/create_archive.sh
 perl -pi.bak -e "s/\\\$RELEASEDATE/$RELEASEDATE/g" $TMP/$PROJECT/README.md
 rm -f $TMP/$PROJECT/README.md.bak
 
-mkdir -p $TMP/$PROJECT/doc/fonts/ptex-fonts
-mv $TMP/$PROJECT/LICENSE $TMP/$PROJECT/doc/fonts/ptex-fonts/
-mv $TMP/$PROJECT/README.md $TMP/$PROJECT/doc/fonts/ptex-fonts/
+mkdir -p $TMP/$PROJECT/doc/fonts/ptex
+mv $TMP/$PROJECT/LICENSE $TMP/$PROJECT/doc/fonts/ptex/
+mv $TMP/$PROJECT/README.md $TMP/$PROJECT/doc/fonts/ptex/
 
 mkdir -p $TMP/$PROJECT/doc/ptex/jvf
 mv $TMP/$PROJECT/Changes_makejvf $TMP/$PROJECT/doc/ptex/jvf/
