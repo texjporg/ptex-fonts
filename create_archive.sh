@@ -19,10 +19,8 @@ rm -f $TMP/$PROJECT/README.md.bak
 mkdir -p $TMP/$PROJECT/doc/fonts/$PROJECT
 mv $TMP/$PROJECT/LICENSE $TMP/$PROJECT/doc/fonts/$PROJECT/
 mv $TMP/$PROJECT/README.md $TMP/$PROJECT/doc/fonts/$PROJECT/
-
-mkdir -p $TMP/$PROJECT/doc/ptex/jvf
-mv $TMP/$PROJECT/Changes_makejvf $TMP/$PROJECT/doc/ptex/jvf/
-mv $TMP/$PROJECT/README_makejvf $TMP/$PROJECT/doc/ptex/jvf/
+mv $TMP/$PROJECT/Changes_makejvf $TMP/$PROJECT/doc/fonts/$PROJECT/
+mv $TMP/$PROJECT/README_makejvf $TMP/$PROJECT/doc/fonts/$PROJECT/
 
 mkdir -p $TMP/$PROJECT/fonts/source/$PROJECT/ascgrp
 mv $TMP/$PROJECT/source/asc* $TMP/$PROJECT/fonts/source/$PROJECT/ascgrp/
