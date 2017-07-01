@@ -1,5 +1,4 @@
 MAKEJVF  = makejvf
-MAKEJVFT = $(MAKEJVF) -m
 PLTOTF   = ppltotf -kanji=jis
 
 all: tfm vf
@@ -26,7 +25,7 @@ vf:
 	done ; \
 	for fnt in tmin ; do \
 		for size in 10 9 8 7 6 5 ; do \
-			$(MAKEJVFT) $$fnt$$size rmlv ; \
+			$(MAKEJVF) -m $$fnt$$size rmlv ; \
 		done ; \
 	done ; \
 	for fnt in goth ngoth ; do \
@@ -36,7 +35,7 @@ vf:
 	done ; \
 	for fnt in tgoth ; do \
 		for size in 10 9 8 7 6 5 ; do \
-			$(MAKEJVFT) $$fnt$$size gbmv ; \
+			$(MAKEJVF) -m $$fnt$$size gbmv ; \
 		done ; \
 	done ; \
 	for fnt in jis jisn ; do \
