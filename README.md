@@ -14,7 +14,13 @@ Type1 fonts:
 - ascgrp, ascii10, ascii36
 
 makejvf documents:
-- README_makejvf, Changes_makejvf (charset: ISO-2022-JP)
+- README_makejvf, Changes_makejvf
+
+## Character encoding
+
+All the text files containing Japanese characters in this repository
+are encoded in ISO-2022-JP. This is because ISO-2022-JP encoded
+texts are most suitable for the traditional pTeX engine.
 
 ## Repository
 
@@ -25,10 +31,10 @@ If you have issues, please let us know from the above page.
 
 ## License
 
-The bundle is redistribution derived from [ptex-texmf distribution
-by ASCII MEDIA WORKS](http://ascii.asciimw.jp/pb/ptex/).
+The bundle is a community edition forked from [ptex-texmf distribution
+by ASCII MEDIA WORKS](https://ctan.org/pkg/ptex-texmf).
 Since the original license is the 3-clause BSD license,
-this redistribution also follows it (see LICENSE).
+this redistribution also follows it (see [LICENSE](./LICENSE)).
 
 ## Release Date
 
