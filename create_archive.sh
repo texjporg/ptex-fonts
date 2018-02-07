@@ -23,9 +23,6 @@ mv $TMP/$PROJECT/README.md $TMP/$PROJECT/doc/fonts/$PROJECT/
 mv $TMP/$PROJECT/Changes_makejvf $TMP/$PROJECT/doc/fonts/$PROJECT/
 mv $TMP/$PROJECT/README_makejvf $TMP/$PROJECT/doc/fonts/$PROJECT/
 
-mkdir -p $TMP/$PROJECT/fonts/source/$PROJECT/ascgrp
-mv $TMP/$PROJECT/source/asc* $TMP/$PROJECT/fonts/source/$PROJECT/ascgrp/
-
 mkdir -p $TMP/$PROJECT/fonts/source/$PROJECT/jis
 mv $TMP/$PROJECT/source/jis* $TMP/$PROJECT/fonts/source/$PROJECT/jis/
 
@@ -34,9 +31,6 @@ mv $TMP/$PROJECT/source/n* $TMP/$PROJECT/fonts/source/$PROJECT/nmin-ngoth/
 
 mkdir -p $TMP/$PROJECT/fonts/source/$PROJECT/standard
 mv $TMP/$PROJECT/source/* $TMP/$PROJECT/fonts/source/$PROJECT/standard/
-
-mkdir -p $TMP/$PROJECT/fonts/tfm/$PROJECT/ascgrp
-mv $TMP/$PROJECT/tfm/asc* $TMP/$PROJECT/fonts/tfm/$PROJECT/ascgrp/
 
 mkdir -p $TMP/$PROJECT/fonts/tfm/$PROJECT/dvips
 mv $TMP/$PROJECT/tfm/futo* $TMP/$PROJECT/fonts/tfm/$PROJECT/dvips/
@@ -60,9 +54,6 @@ mv $TMP/$PROJECT/tfm/n* $TMP/$PROJECT/fonts/tfm/$PROJECT/nmin-ngoth/
 
 mkdir -p $TMP/$PROJECT/fonts/tfm/$PROJECT/standard
 mv $TMP/$PROJECT/tfm/* $TMP/$PROJECT/fonts/tfm/$PROJECT/standard/
-
-mkdir -p $TMP/$PROJECT/fonts/type1/$PROJECT/ascgrp
-mv $TMP/$PROJECT/type1/* $TMP/$PROJECT/fonts/type1/$PROJECT/ascgrp/
 
 mkdir -p $TMP/$PROJECT/fonts/vf/$PROJECT/jis
 mv $TMP/$PROJECT/vf/jis* $TMP/$PROJECT/fonts/vf/$PROJECT/jis/

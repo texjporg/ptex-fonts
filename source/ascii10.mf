@@ -1,3 +1,0 @@
-fontsize#=10;
-input ascii;
-end;

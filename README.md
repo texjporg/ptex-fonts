@@ -10,9 +10,6 @@ TFM and VF (not real fonts):
 - Morisawa standard (Ryumin-Light, GothicBBB-Medium, FutoMinA101-Bold,
   FutoGoB101-Bold, Jun101-Light)
 
-Type1 fonts:
-- ascgrp, ascii10, ascii36
-
 makejvf documents:
 - README_makejvf, Changes_makejvf
 
