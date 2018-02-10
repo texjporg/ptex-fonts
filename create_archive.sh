@@ -30,7 +30,9 @@ mkdir -p $TMP/$PROJECT/fonts/source/$PROJECT/nmin-ngoth
 mv $TMP/$PROJECT/source/n* $TMP/$PROJECT/fonts/source/$PROJECT/nmin-ngoth/
 
 mkdir -p $TMP/$PROJECT/fonts/source/$PROJECT/standard
-mv $TMP/$PROJECT/source/* $TMP/$PROJECT/fonts/source/$PROJECT/standard/
+mv $TMP/$PROJECT/source/min* $TMP/$PROJECT/fonts/source/$PROJECT/standard/
+mv $TMP/$PROJECT/source/goth* $TMP/$PROJECT/fonts/source/$PROJECT/standard/
+mv $TMP/$PROJECT/source/t* $TMP/$PROJECT/fonts/source/$PROJECT/standard/
 
 mkdir -p $TMP/$PROJECT/fonts/tfm/$PROJECT/dvips
 mv $TMP/$PROJECT/tfm/futo* $TMP/$PROJECT/fonts/tfm/$PROJECT/dvips/
@@ -53,7 +55,9 @@ mkdir -p $TMP/$PROJECT/fonts/tfm/$PROJECT/nmin-ngoth
 mv $TMP/$PROJECT/tfm/n* $TMP/$PROJECT/fonts/tfm/$PROJECT/nmin-ngoth/
 
 mkdir -p $TMP/$PROJECT/fonts/tfm/$PROJECT/standard
-mv $TMP/$PROJECT/tfm/* $TMP/$PROJECT/fonts/tfm/$PROJECT/standard/
+mv $TMP/$PROJECT/tfm/min* $TMP/$PROJECT/fonts/tfm/$PROJECT/standard/
+mv $TMP/$PROJECT/tfm/goth* $TMP/$PROJECT/fonts/tfm/$PROJECT/standard/
+mv $TMP/$PROJECT/tfm/t* $TMP/$PROJECT/fonts/tfm/$PROJECT/standard/
 
 mkdir -p $TMP/$PROJECT/fonts/vf/$PROJECT/jis
 mv $TMP/$PROJECT/vf/jis* $TMP/$PROJECT/fonts/vf/$PROJECT/jis/
@@ -68,9 +72,12 @@ mkdir -p $TMP/$PROJECT/fonts/vf/$PROJECT/nmin-ngoth
 mv $TMP/$PROJECT/vf/n* $TMP/$PROJECT/fonts/vf/$PROJECT/nmin-ngoth/
 
 mkdir -p $TMP/$PROJECT/fonts/vf/$PROJECT/standard
-mv $TMP/$PROJECT/vf/* $TMP/$PROJECT/fonts/vf/$PROJECT/standard/
+mv $TMP/$PROJECT/vf/min* $TMP/$PROJECT/fonts/vf/$PROJECT/standard/
+mv $TMP/$PROJECT/vf/goth* $TMP/$PROJECT/fonts/vf/$PROJECT/standard/
+mv $TMP/$PROJECT/vf/t* $TMP/$PROJECT/fonts/vf/$PROJECT/standard/
 
-rmdir $TMP/$PROJECT/{source,tfm,type1,vf}
+rm $TMP/$PROJECT/Makefile $TMP/$PROJECT/source/Makefile
+rmdir $TMP/$PROJECT/{source,tfm,vf}
 
 cd $TMP/$PROJECT && zip -r $TMP/$PROJECT.tds.zip *
 cd $PWDF
@@ -80,6 +87,7 @@ echo
 echo " * Create $PROJECT.zip ($RELEASEDATE)"
 git archive --format=tar --prefix=$PROJECT/ HEAD | (cd $TMP && tar xf -)
 rm $TMP/$PROJECT/create_archive.sh
+rm $TMP/$PROJECT/Makefile $TMP/$PROJECT/source/Makefile
 rm -rf $TMP/$PROJECT/man
 perl -pi.bak -e "s/\\\$RELEASEDATE/$RELEASEDATE/g" $TMP/$PROJECT/README.md
 rm -f $TMP/$PROJECT/README.md.bak
