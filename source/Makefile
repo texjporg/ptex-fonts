@@ -16,16 +16,6 @@ tfm:
 	cp jisn.tfm jisgn.tfm
 	cp jis-v.tfm jisg-v.tfm
 	cp jisn-v.tfm jisgn-v.tfm
-	for fnt in Ryumin-Light FutoMinA101-Bold ; do \
-		cp min10.tfm $$fnt-H.tfm ; \
-		cp tmin10.tfm $$fnt-V.tfm ; \
-		cp jis.tfm $$fnt-J.tfm ; \
-	done
-	for fnt in GothicBBB-Medium FutoGoB101-Bold Jun101-Light ; do \
-		cp goth10.tfm $$fnt-H.tfm ; \
-		cp tgoth10.tfm $$fnt-V.tfm ; \
-		cp jisg.tfm $$fnt-J.tfm ; \
-	done
 
 vf:
 	for fnt in min nmin ; do \
@@ -59,20 +49,6 @@ vf:
 	done
 	for fnt in jisg-v jisgn-v ; do \
 		$(MAKEJVF) $$fnt gbmv ; \
-	done
-	for VAR in J H ; do \
-		$(MAKEJVF) Ryumin-Light-$$VAR ryumin-l ; \
-		$(MAKEJVF) FutoMinA101-Bold-$$VAR futomin-b ; \
-		$(MAKEJVF) GothicBBB-Medium-$$VAR gtbbb-m ; \
-		$(MAKEJVF) FutoGoB101-Bold-$$VAR futogo-b ; \
-		$(MAKEJVF) Jun101-Light-$$VAR jun101-l ; \
-	done
-	for VAR in V ; do \
-		$(MAKEJVF) Ryumin-Light-$$VAR ryumin-l-v ; \
-		$(MAKEJVF) FutoMinA101-Bold-$$VAR futomin-b-v ; \
-		$(MAKEJVF) GothicBBB-Medium-$$VAR gtbbb-m-v ; \
-		$(MAKEJVF) FutoGoB101-Bold-$$VAR futogo-b-v ; \
-		$(MAKEJVF) Jun101-Light-$$VAR jun101-l-v ; \
 	done
 
 move:
