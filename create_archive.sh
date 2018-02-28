@@ -35,21 +35,11 @@ mv $TMP/$PROJECT/source/goth* $TMP/$PROJECT/fonts/source/$PROJECT/standard/
 mv $TMP/$PROJECT/source/t* $TMP/$PROJECT/fonts/source/$PROJECT/standard/
 
 mkdir -p $TMP/$PROJECT/fonts/tfm/$PROJECT/dvips
-mv $TMP/$PROJECT/tfm/futo* $TMP/$PROJECT/fonts/tfm/$PROJECT/dvips/
 mv $TMP/$PROJECT/tfm/gbm* $TMP/$PROJECT/fonts/tfm/$PROJECT/dvips/
-mv $TMP/$PROJECT/tfm/gtb* $TMP/$PROJECT/fonts/tfm/$PROJECT/dvips/
-mv $TMP/$PROJECT/tfm/jun* $TMP/$PROJECT/fonts/tfm/$PROJECT/dvips/
 mv $TMP/$PROJECT/tfm/rml* $TMP/$PROJECT/fonts/tfm/$PROJECT/dvips/
-mv $TMP/$PROJECT/tfm/ryumin* $TMP/$PROJECT/fonts/tfm/$PROJECT/dvips/
 
 mkdir -p $TMP/$PROJECT/fonts/tfm/$PROJECT/jis
 mv $TMP/$PROJECT/tfm/jis* $TMP/$PROJECT/fonts/tfm/$PROJECT/jis/
-
-mkdir -p $TMP/$PROJECT/fonts/tfm/$PROJECT/morisawa
-mv $TMP/$PROJECT/tfm/Futo* $TMP/$PROJECT/fonts/tfm/$PROJECT/morisawa/
-mv $TMP/$PROJECT/tfm/Gothic* $TMP/$PROJECT/fonts/tfm/$PROJECT/morisawa/
-mv $TMP/$PROJECT/tfm/Jun* $TMP/$PROJECT/fonts/tfm/$PROJECT/morisawa/
-mv $TMP/$PROJECT/tfm/Ryumin* $TMP/$PROJECT/fonts/tfm/$PROJECT/morisawa/
 
 mkdir -p $TMP/$PROJECT/fonts/tfm/$PROJECT/nmin-ngoth
 mv $TMP/$PROJECT/tfm/n* $TMP/$PROJECT/fonts/tfm/$PROJECT/nmin-ngoth/
@@ -61,12 +51,6 @@ mv $TMP/$PROJECT/tfm/t* $TMP/$PROJECT/fonts/tfm/$PROJECT/standard/
 
 mkdir -p $TMP/$PROJECT/fonts/vf/$PROJECT/jis
 mv $TMP/$PROJECT/vf/jis* $TMP/$PROJECT/fonts/vf/$PROJECT/jis/
-
-mkdir -p $TMP/$PROJECT/fonts/vf/$PROJECT/morisawa
-mv $TMP/$PROJECT/vf/Futo* $TMP/$PROJECT/fonts/vf/$PROJECT/morisawa/
-mv $TMP/$PROJECT/vf/Gothic* $TMP/$PROJECT/fonts/vf/$PROJECT/morisawa/
-mv $TMP/$PROJECT/vf/Jun* $TMP/$PROJECT/fonts/vf/$PROJECT/morisawa/
-mv $TMP/$PROJECT/vf/Ryumin* $TMP/$PROJECT/fonts/vf/$PROJECT/morisawa/
 
 mkdir -p $TMP/$PROJECT/fonts/vf/$PROJECT/nmin-ngoth
 mv $TMP/$PROJECT/vf/n* $TMP/$PROJECT/fonts/vf/$PROJECT/nmin-ngoth/
