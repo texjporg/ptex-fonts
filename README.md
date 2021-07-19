@@ -1,15 +1,14 @@
 # ptex-fonts
 
-The bundle contains fonts for use with pTeX and the documents for
-makejvf program.
+The bundle contains fonts (TFM and VF) for use with pTeX.
 
-TFM and VF (not real fonts):
 - pTeX standard (min5-10, goth5-10, tmin5-10, tgoth5-10)
 - nmin5-10, ngoth5-10
 - JIS (jis, jisg, jisn, jisgn, jis-v, jisg-v, jisn, jisgn-v)
 
-makejvf documents:
-- README_makejvf, Changes_makejvf
+Documentation are included in ptex-manual bundle
+([CTAN](https://ctan.org/pkg/ptex-manual),
+[GitHub](https://github.com/texjporg/ptex-manual)).
 
 ## Character encoding
 

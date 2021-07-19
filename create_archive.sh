@@ -13,15 +13,12 @@ fi
 echo " * Create $PROJECT.tds.zip"
 git archive --format=tar --prefix=$PROJECT/ HEAD | (cd $TMP && tar xf -)
 rm $TMP/$PROJECT/create_archive.sh
-rm -rf $TMP/$PROJECT/man
 perl -pi.bak -e "s/\\\$RELEASEDATE/$RELEASEDATE/g" $TMP/$PROJECT/README.md
 rm -f $TMP/$PROJECT/README.md.bak
 
 mkdir -p $TMP/$PROJECT/doc/fonts/$PROJECT
 mv $TMP/$PROJECT/LICENSE $TMP/$PROJECT/doc/fonts/$PROJECT/
 mv $TMP/$PROJECT/README.md $TMP/$PROJECT/doc/fonts/$PROJECT/
-mv $TMP/$PROJECT/Changes_makejvf $TMP/$PROJECT/doc/fonts/$PROJECT/
-mv $TMP/$PROJECT/README_makejvf $TMP/$PROJECT/doc/fonts/$PROJECT/
 
 mkdir -p $TMP/$PROJECT/fonts/source/$PROJECT/jis
 mv $TMP/$PROJECT/source/jis* $TMP/$PROJECT/fonts/source/$PROJECT/jis/
@@ -72,7 +69,6 @@ echo " * Create $PROJECT.zip ($RELEASEDATE)"
 git archive --format=tar --prefix=$PROJECT/ HEAD | (cd $TMP && tar xf -)
 rm $TMP/$PROJECT/create_archive.sh
 rm $TMP/$PROJECT/Makefile $TMP/$PROJECT/source/Makefile
-rm -rf $TMP/$PROJECT/man
 perl -pi.bak -e "s/\\\$RELEASEDATE/$RELEASEDATE/g" $TMP/$PROJECT/README.md
 rm -f $TMP/$PROJECT/README.md.bak
 

@@ -8,8 +8,6 @@ install:
 	mkdir -p ${TEXMF}/doc/fonts/ptex-fonts
 	cp ./LICENSE ${TEXMF}/doc/fonts/ptex-fonts/
 	cp ./README.md ${TEXMF}/doc/fonts/ptex-fonts/
-	cp ./Changes_makejvf ${TEXMF}/doc/fonts/ptex-fonts/
-	cp ./README_makejvf ${TEXMF}/doc/fonts/ptex-fonts/
 	mkdir -p ${TEXMF}/fonts/source/ptex-fonts/jis
 	cp ./source/jis* ${TEXMF}/fonts/source/ptex-fonts/jis/
 	mkdir -p ${TEXMF}/fonts/source/ptex-fonts/nmin-ngoth
